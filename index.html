@@ -17,11 +17,11 @@
 		<div class="toggle-button">
 			<i class="fa-solid fa-bars"></i>
 		</div>
-	</div>
-	<div class="dropdown-menu">
-		<li><a href="/explhd/index.html">Home</a></li>
-		<li><a href="#">About</a></li>
-		<li><a href="#">Links</a></li>
+		<div class="dropdown-menu">
+			<li><a href="/explhd/index.html">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Links</a></li>
+		</div>
 	</div>
 	<div class="about-banner">
 		<h1>Welcome to My Website</h1>
@@ -61,11 +61,11 @@
 				<p>
 					this is a mindustry mods that adds some units, blocks, turrets, and other aspects like music. This mod made by ExplerHD with 1237 / 12fd1m help<br/>
 				</p>
-				<a href="/explhd/exp-ui-1-1.html">
-					<button class="view-button" type="button">View Details</button>
+				<a>
+					<button class="view-button" type="button">This project is lost</button>
 				</a>
-				<a href="https://www.mediafire.com/folder/1kqiehaw8h8du/The_Fates_Intertwined">
-					<button class="download-button" type="button">Go to Repository</button>
+				<a>
+					<button class="unavailable-button" type="button">Download unavailable</button>
 				</a>
 			</div>
 		</div>
@@ -126,19 +126,19 @@
 			</a>
 		</div>
 	</div>
-	<script>
-		const toggleBtn = document.querySelector('.toggle-button')
-		const toggleBtnIcon = document.querySelector('.toggle-button i')
-		const dropDownMenu = document.querySelector('.dropdown-menu')
-
-		toggleBtn.onclick = function () {
-			dropDownMenu.classList.toggle('open')
-			const isOpen = dropDownMenu.classList.contains('open')
-
-			toggleBtnIcon.classList = isOpen
-				? "fa-solid fa-xmark"
-				: "fa-solid fa-bars"
-		}
-	</script>
 </body>
+<script>
+	const toggleBtn = document.querySelector('.toggle-button')
+	const toggleBtnIcon = document.querySelector('.toggle-button i')
+	const dropDownMenu = document.querySelector('.dropdown-menu')
+
+	toggleBtn.onclick = function () {
+		dropDownMenu.classList.toggle('open')
+		const isOpen = dropDownMenu.classList.contains('open')
+
+		toggleBtnIcon.classList = isOpen
+			? "fa-solid fa-xmark"
+			: "fa-solid fa-bars"
+	}
+</script>
 </html>

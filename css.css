@@ -1,0 +1,22 @@
+h1 {
+    font-size: 40px;
+    background-color: rgb(127, 127, 127);
+    text-align: center;
+    color: white;
+    border: black 12px;
+    border-radius: 20px;
+}
+
+a {
+    font-size: 32px;
+    text-decoration: none;
+    background-color: blue;
+    border-radius: 12px;
+    size: 2rem;
+    padding: 20px;
+    color: white;
+}
+
+.images {
+    
+}

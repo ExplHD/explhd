@@ -3,25 +3,30 @@
 * {
     font-family: "Rubik", sans-serif;
     font-size: 18px;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    width: 100%;
-    height: 100%;
-    background-image: url(mc-bg2.png);
-    background-repeat: repeat-y;
+    overflow-x: hidden;
 }
 
 /* NAVIGATION PANEL */
 .navbar {
-    width: 85%;
+    width: 100%;
     margin: auto;
     padding: 35px 0px;
     display: flex;
     justify-content: space-between;
+    background-color:rgb(192, 0, 134);
+    position: sticky;
+    top: 0;
+    margin-bottom: 0px;
+    z-index: 50;
 }
 
 .logo {
+    margin-left: 3%;
     width: 100px;
     height: 100px;
     cursor: normal;
@@ -35,6 +40,11 @@ body {
     display: inline-block;
     margin:0px 20px;
     position: relative;
+}
+
+.navbar .links {
+    margin-right: 3%;
+    align-content: center;
 }
 
 .navbar ul li::after {
@@ -53,9 +63,11 @@ body {
 }
 
 .navbar ul li a {
+    margin-right: 0;
     text-decoration: none;
     color: white;
     text-transform: uppercase;
+    font-size: 24px;
     font-weight: bold;
 }
 
@@ -64,6 +76,11 @@ body {
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
+    align-content: center;
+}
+
+.toggle-button {
+    margin-right: 5%;
 }
 
 /* DROPDOWN MENU */
@@ -79,6 +96,7 @@ body {
     overflow: hidden;
     display: none;
     transition: height 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    z-index: 51;
 }
 
 .dropdown-menu.open{
@@ -103,11 +121,9 @@ body {
 /* DESCRIPION BOX */
 .box {
     color:#fff;
-    background-color: rgba(195, 0, 255, 0.5);
-    margin: 1%;
+    background-color: rgb(82, 82, 82);
     backdrop-filter: blur(15px);
     padding: 40px 40px;
-    border-radius: 20px;
 }
 
 .title {
@@ -166,12 +182,28 @@ body {
     aspect-ratio: 16/9;
 }
 
+.weapons {
+    font-size: 30px;
+}
+
 .segment-weapon {
+    background:linear-gradient(to right, rgba(255, 174, 0, 0.5),rgba(255, 0, 0, 0.0));
+    background-size: 25vw;
+    background-repeat: no-repeat;
     font-size: 24px;
 }
 
-.weapons {
-    font-size: 30px;
+.mythic-weapon {
+    background:linear-gradient(to right, rgba(255, 0, 0, 0.5),rgba(255, 0, 0, 0.0));
+    background-size: 25vw;
+    background-repeat: no-repeat;
+    font-size: 24px;
+}
+
+.weapon-vanity {
+    background:linear-gradient(to right, rgba(0, 255, 106, 0.5),rgba(255, 0, 0, 0.0));
+    background-size: 25vw;
+    background-repeat: no-repeat;
 }
 
 /* MEDIA QUERIES */
@@ -193,5 +225,29 @@ body {
     .dropdown-menu {
         left: 2rem;
         width: unset;
+    }
+
+    .thumbnail {
+        width: 320px;
+        height: 180px;
+        aspect-ratio: 16/9;
+    }
+
+    .segment-weapon {
+        background:linear-gradient(to right, rgba(255, 0, 0, 0.5),rgba(255, 0, 0, 0.0));
+        background-size: 50vw;
+        background-repeat: no-repeat;
+    }
+
+    .mythic-weapon {
+        background:linear-gradient(to right, rgba(255, 0, 0, 0.5),rgba(255, 0, 0, 0.0));
+        background-size: 25vw;
+        background-repeat: no-repeat;
+    }
+
+    .weapon-vanity {
+        background:linear-gradient(to right, rgba(0, 255, 106, 0.5),rgba(255, 0, 0, 0.0));
+        background-size: 25vw;
+        background-repeat: no-repeat;
     }
 }
