@@ -18,7 +18,7 @@ body {
     padding: 35px 0px;
     display: flex;
     justify-content: space-between;
-    background-color:rgb(192, 0, 134);
+    background-color:rgba(212, 0, 255, 1);
     position: sticky;
     top: 0;
     margin-bottom: 0px;
@@ -183,18 +183,21 @@ body {
 }
 
 .weapons {
-    font-size: 30px;
+    background:linear-gradient(to right, rgba(0, 255, 106, 0.8),rgba(255, 0, 0, 0.0));
+    background-size: 25vw;
+    background-repeat: no-repeat;
+    font-size: 32px;
 }
 
 .segment-weapon {
-    background:linear-gradient(to right, rgba(255, 174, 0, 0.5),rgba(255, 0, 0, 0.0));
+    background:linear-gradient(to right, rgba(255, 174, 0, 1),rgba(255, 0, 0, 0.0));
     background-size: 25vw;
     background-repeat: no-repeat;
     font-size: 24px;
 }
 
 .mythic-weapon {
-    background:linear-gradient(to right, rgba(255, 0, 0, 0.5),rgba(255, 0, 0, 0.0));
+    background:linear-gradient(to right, rgba(255, 0, 0, 1),rgba(255, 0, 0, 0.0));
     background-size: 25vw;
     background-repeat: no-repeat;
     font-size: 24px;
@@ -204,6 +207,27 @@ body {
     background:linear-gradient(to right, rgba(0, 255, 106, 0.5),rgba(255, 0, 0, 0.0));
     background-size: 25vw;
     background-repeat: no-repeat;
+}
+
+.enemies {
+    background:linear-gradient(to right, rgba(255, 0, 0, 1),rgba(255, 0, 0, 0.0));
+    background-size: 25vw;
+    background-repeat: no-repeat;
+    font-size: 32px;
+}
+
+.ender-dragon {
+    background:linear-gradient(to right, rgba(212, 0, 255, 0.5),rgba(255, 0, 0, 0.0));
+    background-size: 25vw;
+    background-repeat: no-repeat;
+    font-size: 24px;
+}
+
+.elemental-legionnaire {
+    background:linear-gradient(to right, rgba(0, 195, 255, 0.5),rgba(255, 0, 0, 0.0));
+    background-size: 25vw;
+    background-repeat: no-repeat;
+    font-size: 24px;
 }
 
 /* MEDIA QUERIES */
