@@ -230,6 +230,20 @@ body {
     font-size: 24px;
 }
 
+.water-eidolon {
+    background:linear-gradient(to right, rgba(0, 110, 255, 0.5),rgba(255, 0, 0, 0.0));
+    background-size: 25vw;
+    background-repeat: no-repeat;
+    font-size: 24px;
+}
+
+.shadowplague-guardian {
+    background:linear-gradient(to right, rgba(195, 0, 255, 0.5),rgba(255, 0, 0, 0.0));
+    background-size: 25vw;
+    background-repeat: no-repeat;
+    font-size: 24px;
+}
+
 /* MEDIA QUERIES */
 @media(max-width: 992px){
     .navbar .links {

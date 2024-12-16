@@ -1,5 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Gaya untuk layar loading */
+#loading-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Animasi loading */
+.loader {
+    border: 16px solid #f3f3f3;
+    /* Warna background lingkaran */
+    border-top: 16px solid #9f00cf;
+    /* Warna lingkaran animasi */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+/* Keyframes untuk animasi */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 * {
     font-family: "Montserrat", sans-serif;
     margin: 0;
@@ -21,7 +56,7 @@ body {
     padding: 35px 0px;
     display: flex;
     justify-content: space-between;
-    background-color:rgba(65, 65, 65, 1);
+    background-color: rgba(65, 65, 65, 1);
     position: sticky;
     top: 0;
     margin-bottom: 30px;
@@ -41,7 +76,7 @@ body {
 .navbar ul li {
     list-style: none;
     display: inline-block;
-    margin:0px 20px;
+    margin: 0px 20px;
     position: relative;
 }
 
@@ -93,7 +128,7 @@ body {
     top: 75px;
     height: 0px;
     width: 300px;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     backdrop-filter: blur(15px);
     overflow: hidden;
@@ -102,7 +137,7 @@ body {
     z-index: 51;
 }
 
-.dropdown-menu.open{
+.dropdown-menu.open {
     height: 130px;
     padding: 10px;
 }
@@ -123,7 +158,7 @@ body {
 
 /* ABOUT BOX */
 .about-banner {
-    background:rgba(135, 29, 255, 1);
+    background: rgba(135, 29, 255, 1);
     color: white;
     padding: 40px;
     border-radius: 10px;
@@ -220,25 +255,7 @@ body {
 .the-fates-intertwined a {
     color: white;
     width: 100%;
-    font-size:32px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.exp-ui {
-    max-width: 100%;
-    max-height: fit-content;
-    background: rgba(192, 0, 0, 0.5);
-    border-radius: 10px;
-    padding: 10px 10px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.exp-ui a {
-    color: white;
-    width: 100%;
-    font-size:32px;
+    font-size: 32px;
     text-decoration: none;
     font-weight: bold;
 }
@@ -256,43 +273,7 @@ body {
 .old-era-revival a {
     color: white;
     width: 100%;
-    font-size:32px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.legendary-weapons {
-    max-width: 100%;
-    max-height: fit-content;
-    background: rgba(192, 0, 0, 0.5);
-    border-radius: 10px;
-    padding: 10px 10px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.legendary-weapons a {
-    color: white;
-    width: 100%;
-    font-size:32px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.legend-of-hex {
-    max-width: 100%;
-    max-height: fit-content;
-    background: rgba(192, 0, 0, 0.5);
-    border-radius: 10px;
-    padding: 10px 10px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.legend-of-hex a {
-    color: white;
-    width: 100%;
-    font-size:32px;
+    font-size: 32px;
     text-decoration: none;
     font-weight: bold;
 }
@@ -309,7 +290,7 @@ body {
     width: 40%;
     color: #fff;
     border-radius: 15px;
-    border-color: rgba(0,0,0,0);
+    border-color: rgba(0, 0, 0, 0);
     transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
     cursor: pointer;
 }
@@ -327,7 +308,7 @@ body {
     width: 40%;
     color: #fff;
     border-radius: 15px;
-    border-color: rgba(0,0,0,0);
+    border-color: rgba(0, 0, 0, 0);
     transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
     cursor: pointer;
 }
@@ -345,7 +326,7 @@ body {
     width: 40%;
     color: #fff;
     border-radius: 15px;
-    border-color: rgba(0,0,0,0);
+    border-color: rgba(0, 0, 0, 0);
     transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
     cursor: pointer;
 }
@@ -358,7 +339,7 @@ body {
 }
 
 /* MEDIA QUERIES */
-@media(max-width: 992px){
+@media(max-width: 992px) {
     .navbar .links {
         display: none;
     }
@@ -372,7 +353,7 @@ body {
     }
 }
 
-@media(max-width: 840px){
+@media(max-width: 840px) {
     .dropdown-menu {
         left: 2rem;
         width: unset;

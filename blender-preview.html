@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambar Website</title>
+    <style>
+        /* Gaya untuk tombol kembali */
+        .back-button {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Gaya untuk gambar */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        img {
+            max-width: 80%;
+            max-height: 80%;
+        }
+    </style>
+</head>
+
+<body> <!-- Tombol kembali --> <button class="back-button" onclick="goBack()">Kembali</button> <!-- Kontainer gambar -->
+    <div class="image-container"> <img src="images/untitled.png" alt="Gambar contoh"> </div>
+    <script>
+    // Fungsi untuk tombol kembali
+    function goBack() { window.history.back(); }
+    </script>
+</body>

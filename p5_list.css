@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Gaya untuk layar loading */
+#loading-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Animasi loading */
+.loader {
+    border: 16px solid #f3f3f3;
+    /* Warna background lingkaran */
+    border-top: 16px solid #9f00cf;
+    /* Warna lingkaran animasi */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+/* Keyframes untuk animasi */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url(mc-bg1.png);
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+/* NAVIGATION PANEL */
+.navbar {
+    width: 100%;
+    margin: auto;
+    padding: 35px 0px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(65, 65, 65, 1);
+    position: sticky;
+    top: 0;
+    margin-bottom: 30px;
+    z-index: 50;
+}
+
+.logo {
+    margin-left: 3%;
+    width: 100px;
+    height: 100px;
+    cursor: normal;
+    border-radius: 50px;
+    box-shadow: 0px 0px 4px 4px;
+    color: black;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 20px;
+    position: relative;
+}
+
+.navbar .links {
+    margin-right: 3%;
+    align-content: center;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: lightblue;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+
+.navbar ul li:hover:after {
+    width: 100%;
+}
+
+.navbar ul li a {
+    margin-right: 0;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .toggle-button {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+    align-content: center;
+}
+
+.toggle-button {
+    margin-right: 5%;
+}
+
+/* DROPDOWN MENU */
+.dropdown-menu {
+    position: absolute;
+    right: 2rem;
+    top: 75px;
+    height: 0px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    overflow: hidden;
+    display: none;
+    transition: height 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    z-index: 51;
+}
+
+.dropdown-menu.open {
+    height: 130px;
+    padding: 10px;
+}
+
+.dropdown-menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-menu li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* LABEL CATEGORY */
+.type {
+    background-color: rgba(255, 0, 0, 0.5);
+    border-radius: 50px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10px;
+    width: 15%;
+    text-align: center;
+    margin: 5px;
+}
+
+.games {
+    background-color: rgba(0, 255, 38, 0.5);
+    border-radius: 50px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10px;
+    width: 15%;
+    text-align: center;
+    margin: 5px;
+}
+
+.addon-version {
+    background-color: rgba(0, 217, 255, 0.5);
+    border-radius: 50px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10px;
+    width: 15%;
+    text-align: center;
+    margin: 5px;
+}
+
+.game-version {
+    background-color: rgba(204, 0, 255, 0.5);
+    border-radius: 50px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10px;
+    width: 15%;
+    text-align: center;
+    margin: 5px;
+}
+
+/* CONTENT */
+.flex-container {
+    background: rgba(135, 29, 255, 0.5);
+    border-radius: 10px;
+    color: white;
+    padding: 30px 30px;
+    margin-top: 200px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 870px));
+    gap: 1em;
+    backdrop-filter: blur(7px);
+}
+
+.exo-journey {
+    margin-left: 15%;
+    max-width: 100%;
+    max-height: fit-content;
+    background: rgba(192, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.exo-journey a {
+    color: white;
+    width: 100%;
+    font-size: 32px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blender-render {
+    margin-right: 15%;
+    max-width: 100%;
+    max-height: fit-content;
+    background: rgba(192, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blender-render a {
+    color: white;
+    width: 100%;
+    font-size: 32px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.exo {
+    max-width: 320px;
+    max-height: 200px;
+    aspect-ratio: 16/9;
+}
+
+/* BUTTONS */
+.view-button {
+    background-color: rgba(192, 122, 0, 0.7);
+    width: 40%;
+    color: #fff;
+    border-radius: 15px;
+    border-color: rgba(0, 0, 0, 0);
+    transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
+}
+
+.view-button:hover {
+    background-color: rgb(255, 208, 0);
+    color: #000;
+    border-radius: 15px;
+    box-shadow: 0px 0px 4px 4px rgb(255, 208, 0);
+}
+
+.download-button {
+    margin-left: 1%;
+    background-color: rgba(0, 80, 192, 0.7);
+    width: 40%;
+    color: #fff;
+    border-radius: 15px;
+    border-color: rgba(0, 0, 0, 0);
+    transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
+}
+
+.download-button:hover {
+    background-color: rgb(0, 128, 255);
+    color: #000;
+    border-radius: 15px;
+    box-shadow: 0px 0px 4px 4px rgb(0, 128, 255);
+}
+
+.unavailable-button {
+    margin-left: 1%;
+    background-color: rgba(61, 61, 61, 0.7);
+    width: 40%;
+    color: #fff;
+    border-radius: 15px;
+    border-color: rgba(0, 0, 0, 0);
+    transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
+}
+
+.unavailable-button:hover {
+    background-color: rgb(184, 184, 184);
+    color: #000;
+    border-radius: 15px;
+    box-shadow: 0px 0px 4px 4px rgb(184, 184, 184);
+}
+
+@media(max-width: 992px) {
+    .navbar .links {
+        display: none;
+    }
+
+    .navbar .toggle-button {
+        display: block;
+    }
+
+    .dropdown-menu {
+        display: block;
+    }
+}
+
+@media(max-width: 840px) {
+    .dropdown-menu {
+        left: 2rem;
+        width: unset;
+    }
+
+    .dropdown-menu {
+        left: 2rem;
+        width: unset;
+    }
+
+    .type {
+        width: 50%;
+    }
+
+    .games {
+        width: 50%;
+    }
+
+    .addon-version {
+        width: 50%;
+    }
+
+    .game-version {
+        width: 50%;
+    }
+
+    .exo-journey {
+        margin-left: 0%;
+    }
+
+    .blender-render {
+        margin-right: 0%;
+    }
+
+    .exo {
+        max-width: 280px;
+        max-height: 140px;
+        aspect-ratio: 16/9;
+    }
+
+    .logo {
+        max-width: 64px;
+        max-height: 64px;
+        margin-left: 5%;
+    }
+}
