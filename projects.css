@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&display=swap');
 
 /* Gaya untuk layar loading */
 #loading-screen {
@@ -16,7 +16,7 @@
 .loader {
     border: 16px solid #f3f3f3;
     /* Warna background lingkaran */
-    border-top: 16px solid #9f00cf;
+    border-top: 16px solid rgba(39, 144, 201);
     /* Warna lingkaran animasi */
     border-radius: 50%;
     width: 120px;
@@ -36,16 +36,15 @@
 }
 
 * {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Comfortaa", serif;
     margin: 0;
     padding: 0;
 }
 
 body {
     width: 100%;
-    height: 100%;
-    background-image: url(mc-bg1.png);
-    background-size: cover;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(39, 144, 201), rgb(0, 69, 106));
     overflow-x: hidden;
 }
 
@@ -53,20 +52,20 @@ body {
 .navbar {
     width: 100%;
     margin: auto;
-    padding: 35px 0px;
+    padding: 25px 0px;
     display: flex;
     justify-content: space-between;
-    background-color: rgba(65, 65, 65, 1);
+    background-color: rgba(14, 35, 54, 0.9);
     position: sticky;
     top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     z-index: 50;
 }
 
 .logo {
     margin-left: 3%;
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     cursor: normal;
     border-radius: 50px;
     box-shadow: 0px 0px 4px 4px;
@@ -156,117 +155,70 @@ body {
     font-weight: bold;
 }
 
-/* LABEL CATEGORY */
-.type {
-    background-color: rgba(255, 0, 0, 0.5);
-    border-radius: 50px;
-    padding: 10px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 10px;
-    width: 15%;
-    text-align: center;
-    margin: 5px;
-}
-
-.games {
-    background-color: rgba(0, 255, 38, 0.5);
-    border-radius: 50px;
-    padding: 10px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 10px;
-    width: 15%;
-    text-align: center;
-    margin: 5px;
-}
-
-.addon-version {
-    background-color: rgba(0, 217, 255, 0.5);
-    border-radius: 50px;
-    padding: 10px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 10px;
-    width: 15%;
-    text-align: center;
-    margin: 5px;
-}
-
-.game-version {
-    background-color: rgba(204, 0, 255, 0.5);
-    border-radius: 50px;
-    padding: 10px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 10px;
-    width: 15%;
-    text-align: center;
-    margin: 5px;
-}
-
 /* CONTENT */
-.flex-container {
-    background: rgba(135, 29, 255, 0.5);
+.container {
+    margin: 2rem;   
+}
+
+.container .titleRoot {
+    text-align: center;
+    color: #fff
+}
+
+.container p {
+    text-align: center;
+    color: #fff
+}
+
+.grid-container {
+    background: rgba(14, 35, 54, 0.5);
     border-radius: 10px;
     color: white;
     padding: 30px 30px;
-    margin-top: 200px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 870px));
+    grid-template-columns: repeat(2, 1fr);
     gap: 1em;
     backdrop-filter: blur(7px);
 }
 
-.exo-journey {
-    margin-left: 15%;
+.grid { 
     max-width: 100%;
     max-height: fit-content;
-    background: rgba(192, 0, 0, 0.5);
+    background: rgba(245, 241, 7, 0.8);
     border-radius: 10px;
     padding: 10px 10px;
     display: flex;
     flex-wrap: wrap;
 }
 
-.exo-journey a {
-    color: white;
+.grid a {
+    color: black;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     width: 100%;
     font-size: 32px;
     text-decoration: none;
     font-weight: bold;
 }
 
-.blender-render {
-    margin-right: 15%;
-    max-width: 100%;
-    max-height: fit-content;
-    background: rgba(192, 0, 0, 0.5);
-    border-radius: 10px;
-    padding: 10px 10px;
-    display: flex;
-    flex-wrap: wrap;
+.description p {
+    color: black;
+    text-align: justify;
 }
 
-.blender-render a {
-    color: white;
-    width: 100%;
-    font-size: 32px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.exo {
-    max-width: 320px;
-    max-height: 200px;
+.thumbnail {
+    width: 286px;
+    height: 167px;
     aspect-ratio: 16/9;
 }
 
-/* BUTTONS */
+/* Buttons */
 .view-button {
-    background-color: rgba(192, 122, 0, 0.7);
+    background-color: rgba(34, 144, 201, 0.7);
+    font-family: "Montserrat", serif;
+    font-size: 1rem;
+    margin-top: 1rem;
     width: 40%;
     color: #fff;
     border-radius: 15px;
@@ -282,42 +234,7 @@ body {
     box-shadow: 0px 0px 4px 4px rgb(255, 208, 0);
 }
 
-.download-button {
-    margin-left: 1%;
-    background-color: rgba(0, 80, 192, 0.7);
-    width: 40%;
-    color: #fff;
-    border-radius: 15px;
-    border-color: rgba(0, 0, 0, 0);
-    transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-    cursor: pointer;
-}
-
-.download-button:hover {
-    background-color: rgb(0, 128, 255);
-    color: #000;
-    border-radius: 15px;
-    box-shadow: 0px 0px 4px 4px rgb(0, 128, 255);
-}
-
-.unavailable-button {
-    margin-left: 1%;
-    background-color: rgba(61, 61, 61, 0.7);
-    width: 40%;
-    color: #fff;
-    border-radius: 15px;
-    border-color: rgba(0, 0, 0, 0);
-    transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-    cursor: pointer;
-}
-
-.unavailable-button:hover {
-    background-color: rgb(184, 184, 184);
-    color: #000;
-    border-radius: 15px;
-    box-shadow: 0px 0px 4px 4px rgb(184, 184, 184);
-}
-
+/* MEDIA QUERIES */
 @media(max-width: 992px) {
     .navbar .links {
         display: none;
@@ -332,45 +249,18 @@ body {
     }
 }
 
-@media(max-width: 840px) {
-    .dropdown-menu {
-        left: 2rem;
-        width: unset;
+@media(max-width: 470px) {
+    html,body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
     }
 
     .dropdown-menu {
         left: 2rem;
         width: unset;
-    }
-
-    .type {
-        width: 50%;
-    }
-
-    .games {
-        width: 50%;
-    }
-
-    .addon-version {
-        width: 50%;
-    }
-
-    .game-version {
-        width: 50%;
-    }
-
-    .exo-journey {
-        margin-left: 0%;
-    }
-
-    .blender-render {
-        margin-right: 0%;
-    }
-
-    .exo {
-        max-width: 280px;
-        max-height: 140px;
-        aspect-ratio: 16/9;
     }
 
     .logo {

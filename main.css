@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&display=swap');
 
 /* Gaya untuk layar loading */
 #loading-screen {
@@ -16,7 +16,7 @@
 .loader {
     border: 16px solid #f3f3f3;
     /* Warna background lingkaran */
-    border-top: 16px solid #9f00cf;
+    border-top: 16px solid rgba(39, 144, 201);
     /* Warna lingkaran animasi */
     border-radius: 50%;
     width: 120px;
@@ -36,38 +36,91 @@
 }
 
 * {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Comfortaa", serif;
     margin: 0;
     padding: 0;
 }
 
 body {
     width: 100%;
-    height: 100%;
-    background-image: url(mc-bg1.png);
-    background-size: cover;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(39, 144, 201), rgb(0, 69, 106), rgba(39, 144, 201), rgb(0, 69, 106));
+    background-size: 400%, 400%;
+    animation: gradient 5s  ease infinite;
     overflow-x: hidden;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0%, 50%;
+    }
+    50% {
+        background-position: 100%, 50%;
+    }
+    100% {
+        background-position: 0%, 50%;
+    }
+}
+
+/* CURSOR CLASSES */
+.curser {
+    z-index: 999;
+    position: fixed;
+    background: #2696E8;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    align-items: center;
+    box-shadow: 0 0 20px #2696E8,
+                0 0 60px #2696E8,
+                0 0 100px #2696E8;
+    animation: colors 5s infinite;
+    transform: translate(-50%, -50%);
+    display: none;
+    transition: size 1s ease-out;
+}
+
+@keyframes colors {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.curser:before {
+    content: '';
+    position: absolute;
+    background: #2696E8;
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    transform: translate(-30%, -30%);
+    border-radius: 50%;
+    filter: blur(4px);
 }
 
 /* NAVIGATION PANEL */
 .navbar {
     width: 100%;
     margin: auto;
-    padding: 35px 0px;
+    padding: 25px 0px;
     display: flex;
     justify-content: space-between;
-    background-color: rgba(65, 65, 65, 1);
+    background-color: rgba(14, 35, 54, 0.9);
     position: sticky;
     top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     z-index: 50;
 }
 
 .logo {
     margin-left: 3%;
-    width: 100px;
-    height: 100px;
-    cursor: normal;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
     border-radius: 50px;
     box-shadow: 0px 0px 4px 4px;
     color: black;
@@ -157,185 +210,61 @@ body {
 }
 
 /* ABOUT BOX */
-.about-banner {
-    background: rgba(135, 29, 255, 1);
-    color: white;
+.welcome-container {
+    margin: 1vh;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 65%;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    flex-direction: row;
     padding: 40px;
-    border-radius: 10px;
-    margin-left: 40px;
-    margin-right: 40px;
+    border-radius: 24px;
+    z-index: 1;
 }
 
-/* LABELS */
-.upload {
-    font-size: 40px;
-    font-weight: bold;
-    color: #fff;
-    background-color: rgba(135, 29, 255, 0.5);
-    padding: 30px;
-    margin-left: 40px;
-    margin-right: 40px;
-    border-radius: 10px;
+.hex-wrap{
+    width: 25rem;
+    height: 25rem;
+    aspect-ratio: 1/1;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    flex-grow: 1;
 }
 
-/* ADDONS TAB */
-.addon-tab {
-    background: rgba(135, 29, 255, 0.5);
-    border-radius: 10px;
-    color: white;
-    padding: 30px 30px;
-    margin-left: 40px;
-    margin-right: 40px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 870px));
-    gap: 1em;
-    backdrop-filter: blur(7px);
+.text-container{
+    margin-left: 5%;
+    width: 75rem;
+    height: 40rem;
+    flex-grow: 1;
 }
 
-/* LABEL CATEGORY */
-.type {
-    background-color: rgba(255, 0, 0, 0.5);
-    border-radius: 50px;
-    padding: 10px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 10px;
-    width: 15%;
-    text-align: center;
-    margin: 5px;
+.text-container h1 {
+    font-size: 3rem;
+    transform: translate(0%, -30%);
 }
 
-.games {
-    background-color: rgba(0, 255, 38, 0.5);
-    border-radius: 50px;
-    padding: 10px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 10px;
-    width: 15%;
-    text-align: center;
-    margin: 5px;
+.text-container p {
+    font-size: 1.3rem;
 }
 
-.addon-version {
-    background-color: rgba(0, 217, 255, 0.5);
-    border-radius: 50px;
-    padding: 10px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 10px;
-    width: 15%;
-    text-align: center;
-    margin: 5px;
-}
-
-.game-version {
-    background-color: rgba(204, 0, 255, 0.5);
-    border-radius: 50px;
-    padding: 10px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 10px;
-    width: 15%;
-    text-align: center;
-    margin: 5px;
-}
-
-/* ADDONS LIST */
-.the-fates-intertwined {
-    max-width: 100%;
-    max-height: fit-content;
-    background: rgba(192, 0, 0, 0.5);
-    border-radius: 10px;
-    padding: 10px 10px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.the-fates-intertwined a {
-    color: white;
-    width: 100%;
-    font-size: 32px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.old-era-revival {
-    max-width: 100%;
-    max-height: fit-content;
-    background: rgba(192, 0, 0, 0.5);
-    border-radius: 10px;
-    padding: 10px 10px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.old-era-revival a {
-    color: white;
-    width: 100%;
-    font-size: 32px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.the-fates-intertwined-pic {
-    max-width: 320px;
-    max-height: 200px;
-    aspect-ratio: 16/9;
-}
-
-/* BUTTONS */
-.view-button {
-    background-color: rgba(192, 122, 0, 0.7);
-    width: 40%;
-    color: #fff;
-    border-radius: 15px;
-    border-color: rgba(0, 0, 0, 0);
-    transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+.projects {
+    margin-top: 5%;
+    width: 20vw;
+    height: 10vh;
+    font-size: 2rem;
+    font-family: "Montserrat", serif;
+    font-weight: 1000;
+    border-radius: 1.5rem;
+    border: 0px;
+    background: linear-gradient(90deg, rgb(77, 160, 255), rgba(245, 241, 7, 1));
+    transition: 0.3s ease-in-out;
     cursor: pointer;
+    flex-grow: 1;
 }
 
-.view-button:hover {
-    background-color: rgb(255, 208, 0);
-    color: #000;
-    border-radius: 15px;
-    box-shadow: 0px 0px 4px 4px rgb(255, 208, 0);
-}
-
-.download-button {
-    margin-left: 1%;
-    background-color: rgba(0, 80, 192, 0.7);
-    width: 40%;
-    color: #fff;
-    border-radius: 15px;
-    border-color: rgba(0, 0, 0, 0);
-    transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-    cursor: pointer;
-}
-
-.download-button:hover {
-    background-color: rgb(0, 128, 255);
-    color: #000;
-    border-radius: 15px;
-    box-shadow: 0px 0px 4px 4px rgb(0, 128, 255);
-}
-
-.unavailable-button {
-    margin-left: 1%;
-    background-color: rgba(61, 61, 61, 0.7);
-    width: 40%;
-    color: #fff;
-    border-radius: 15px;
-    border-color: rgba(0, 0, 0, 0);
-    transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-    cursor: pointer;
-}
-
-.unavailable-button:hover {
-    background-color: rgb(184, 184, 184);
-    color: #000;
-    border-radius: 15px;
-    box-shadow: 0px 0px 4px 4px rgb(184, 184, 184);
+.projects:hover {
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 0px 8px 8px rgb(251, 255, 0);
 }
 
 /* MEDIA QUERIES */
@@ -351,39 +280,117 @@ body {
     .dropdown-menu {
         display: block;
     }
+    .welcome-container {
+        margin: 1vh;
+        background-color: rgba(255, 255, 255, 0.4);
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        border-radius: 24px;
+        z-index: 1;
+    }
+
+    .hex-wrap {
+        max-width: 128px;
+        max-height: 128px;
+        transform: translate(%, 0%);
+    }
+
+    .text-container{
+        margin-left: 0;
+    }
+    
+    .text-container h1 {
+        margin-top: 4%;
+        font-size: 2rem;
+    }
+    
+    .text-container p {
+        font-size: 1.4rem;
+        width: 60%;
+        text-align: justify;
+    }
+    
+    .projects {
+        margin-top: 5%;
+        width: 60vw;
+        height: 10vh;
+        font-size: 2rem;
+        font-family: "Montserrat", serif;
+        font-weight: 1000;
+        border-radius: 2rem;
+        border: 0px;
+        background: linear-gradient(90deg, rgb(77, 160, 255), rgba(245, 241, 7, 1));
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+    }
 }
 
-@media(max-width: 840px) {
+@media(max-width: 470px) {
+    html,body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
     .dropdown-menu {
         left: 2rem;
         width: unset;
-    }
-
-    .type {
-        width: 50%;
-    }
-
-    .games {
-        width: 50%;
-    }
-
-    .addon-version {
-        width: 50%;
-    }
-
-    .game-version {
-        width: 50%;
-    }
-
-    .the-fates-intertwined-pic {
-        max-width: 280px;
-        max-height: 140px;
-        aspect-ratio: 16/9;
     }
 
     .logo {
         max-width: 64px;
         max-height: 64px;
         margin-left: 5%;
+    }
+
+    .welcome-container {
+        margin: 1vh;
+        height: fit-content;
+        background-color: rgba(255, 255, 255, 0.4);
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        border-radius: 24px;
+        z-index: 1;
+    }
+
+    .hex-wrap {
+        max-width: 128px;
+        max-height: 128px;
+        transform: translate(70%, 0%);
+    }
+
+    .text-container{
+        margin-left: 0;
+        width: 75rem;
+        height: 40rem;
+    }
+    
+    .text-container h1 {
+        margin-top: 4%;
+        font-size: 1.7rem;
+    }
+    
+    .text-container p {
+        font-size: 1rem;
+        width: 18rem;
+        text-align: justify;
+    }
+    
+    .projects {
+        margin-top: 5%;
+        width: 60vw;
+        height: 10vh;
+        font-size: 2rem;
+        font-family: "Montserrat", serif;
+        font-weight: 1000;
+        border-radius: 2rem;
+        border: 0px;
+        background: linear-gradient(90deg, rgb(77, 160, 255), rgba(245, 241, 7, 1));
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
     }
 }

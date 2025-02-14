@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* NAVIGATION PANEL */
+.navbar {
+    width: 100%;
+    margin: auto;
+    padding: 35px 0px;
+    display: flex;
+    justify-content: space-between;
+    background-color:rgba(212, 0, 255, 1);
+    position: sticky;
+    top: 0;
+    margin-bottom: 0px;
+    z-index: 50;
+}
+
+.logo {
+    margin-left: 3%;
+    width: 100px;
+    height: 100px;
+    cursor: normal;
+    border-radius: 50px;
+    box-shadow: 0px 0px 4px 4px;
+    color: black;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin:0px 20px;
+    position: relative;
+}
+
+.navbar .links {
+    margin-right: 3%;
+    align-content: center;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: lightblue;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+
+.navbar ul li:hover:after {
+    width: 100%;
+}
+
+.navbar ul li a {
+    margin-right: 0;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .toggle-button {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+    align-content: center;
+}
+
+.toggle-button {
+    margin-right: 5%;
+}
+
+/* DROPDOWN MENU */
+.dropdown-menu {
+    position: absolute;
+    right: 2rem;
+    top: 75px;
+    height: 0px;
+    width: 300px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    overflow: hidden;
+    display: none;
+    transition: height 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    z-index: 51;
+}
+
+.dropdown-menu.open{
+    height: 130px;
+    padding: 10px;
+}
+
+.dropdown-menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-menu li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* DESCRIPION BOX */
+.box {
+    color:#fff;
+    background-color: rgb(82, 82, 82);
+    backdrop-filter: blur(15px);
+    padding: 40px 40px;
+}
+
+.title {
+    display:flex;
+    justify-content: first baseline;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.title h1 {
+    width: 100vw;
+    font-size: 50px;
+}
+
+/* LABEL CATEGORY */
+.type {
+    background-color: rgba(255, 0, 0, 0.5);
+    border-radius: 50px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.games {
+    background-color: rgba(0, 255, 38, 0.5);
+    border-radius: 50px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.addon-version {
+    background-color: rgba(0, 217, 255, 0.5);
+    border-radius: 50px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.game-version {
+    background-color: rgba(204, 0, 255, 0.5);
+    border-radius: 50px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.thumbnail {
+    margin-top: 2%;
+    width: 60vw;
+    height: 60vh;
+    aspect-ratio: 16/9;
+}
+
+.weapons {
+    background:linear-gradient(to right, rgba(0, 255, 106, 0.8),rgba(255, 0, 0, 0.0));
+    background-size: 25vw;
+    background-repeat: no-repeat;
+    font-size: 32px;
+}
+
+.segment-weapon {
+    background:linear-gradient(to right, rgba(255, 174, 0, 1),rgba(255, 0, 0, 0.0));
+    background-size: 25vw;
+    background-repeat: no-repeat;
+    font-size: 24px;
+}
+
+.mythic-weapon {
+    background:linear-gradient(to right, rgba(255, 0, 0, 1),rgba(255, 0, 0, 0.0));
+    background-size: 25vw;
+    background-repeat: no-repeat;
+    font-size: 24px;
+}
+
+.weapon-vanity {
+    background:linear-gradient(to right, rgba(0, 255, 106, 0.5),rgba(255, 0, 0, 0.0));
+    background-size: 25vw;
+    background-repeat: no-repeat;
+}
+
+.enemies {
+    background:linear-gradient(to right, rgba(255, 0, 0, 1),rgba(255, 0, 0, 0.0));
+    background-size: 25vw;
+    background-repeat: no-repeat;
+    font-size: 32px;
+}
+
+.ender-dragon {
+    background:linear-gradient(to right, rgba(212, 0, 255, 0.5),rgba(255, 0, 0, 0.0));
+    background-size: 25vw;
+    background-repeat: no-repeat;
+    font-size: 24px;
+}
+
+.elemental-legionnaire {
+    background:linear-gradient(to right, rgba(0, 195, 255, 0.5),rgba(255, 0, 0, 0.0));
+    background-size: 25vw;
+    background-repeat: no-repeat;
+    font-size: 24px;
+}
+
+.water-eidolon {
+    background:linear-gradient(to right, rgba(0, 110, 255, 0.5),rgba(255, 0, 0, 0.0));
+    background-size: 25vw;
+    background-repeat: no-repeat;
+    font-size: 24px;
+}
+
+.shadowplague-guardian {
+    background:linear-gradient(to right, rgba(195, 0, 255, 0.5),rgba(255, 0, 0, 0.0));
+    background-size: 25vw;
+    background-repeat: no-repeat;
+    font-size: 24px;
+}
+
+/* MEDIA QUERIES */
+@media(max-width: 992px){
+    .navbar .links {
+        display: none;
+    }
+
+    .navbar .toggle-button {
+        display: block;
+    }
+
+    .dropdown-menu {
+        display: block;
+    }
+}
+
+@media(max-width: 840px){
+    .dropdown-menu {
+        left: 2rem;
+        width: unset;
+    }
+
+    .thumbnail {
+        width: 320px;
+        height: 180px;
+        aspect-ratio: 16/9;
+    }
+
+    .segment-weapon {
+        background:linear-gradient(to right, rgba(255, 0, 0, 0.5),rgba(255, 0, 0, 0.0));
+        background-size: 50vw;
+        background-repeat: no-repeat;
+    }
+
+    .mythic-weapon {
+        background:linear-gradient(to right, rgba(255, 0, 0, 0.5),rgba(255, 0, 0, 0.0));
+        background-size: 25vw;
+        background-repeat: no-repeat;
+    }
+
+    .weapon-vanity {
+        background:linear-gradient(to right, rgba(0, 255, 106, 0.5),rgba(255, 0, 0, 0.0));
+        background-size: 25vw;
+        background-repeat: no-repeat;
+    }
+}

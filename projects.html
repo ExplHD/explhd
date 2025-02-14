@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+		integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link href="projects.css" rel="stylesheet" />
+    <title>Projects</title>
+</head>
+<body>
+    <div id="loading-screen">
+		<div class="loader"></div>
+	</div>
+	<div class="navbar">
+		<img class="logo" src="images/logo.jpg" alt="logo" href="explhd/main.html">
+		<ul class="links">
+			<li><a href="/explhd/projects.html">Projects</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Links</a></li>
+		</ul>
+		<div class="toggle-button">
+			<i class="fa-solid fa-bars"></i>
+		</div>
+		<div class="dropdown-menu">
+			<li><a href="/explhd/index.html">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Links</a></li>
+		</div>
+	</div>
+	<div class="container">
+		<h1 class="titleRoot">My Projects</h1>
+		<p>This is my project, I'm only have 2 projects, so yeah not too much</p>
+		<div class="grid-container">
+			<div class="grid">
+				<img src="images/thumb-fates-corruption.png" class="thumbnail" alt="the-fates-intertwined">
+				<a href="explhd/the-fates-intertwined/the-fates-intertwined.html">The Fates Intertwined</a>
+				<div class="description">
+					<p>Feels the minecraft weapons progression is very boring? Or the boss experience that feels very plains? try this add-on, this add-on adds a lot of weapons progression, some bosses, and even added the custom lore based on the 4 craftable weapons</p>
+					<a href="explhd/the-fates-intertwined/the-fates-intertwined.html"><button class="view-button">View Details</button></a>
+					<a href="explhd/the-fates-intertwined/version-select.html"><button class="view-button">Download Add-On</button></a>
+				</div>
+			</div>
+			<div class="grid">
+				<img src="images/Exo_Journey_title_4_3_ratio (1).png" class="thumbnail" alt="exo-journey">
+				<a href="explhd/the-fates-intertwined/the-fates-intertwined.html">Exo Journey</a>
+				<div class="description">
+					<p>A Scratch game developed by me, this project used to be a school project, but now it discontinued</p>
+					<a href="explhd/exo-journey.html"><button class="view-button">Play Game</button></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	const toggleBtn = document.querySelector('.toggle-button')
+	const toggleBtnIcon = document.querySelector('.toggle-button i')
+	const dropDownMenu = document.querySelector('.dropdown-menu')
+
+	toggleBtn.onclick = function () {
+		dropDownMenu.classList.toggle('open')
+		const isOpen = dropDownMenu.classList.contains('open')
+
+		toggleBtnIcon.classList = isOpen
+			? "fa-solid fa-xmark"
+			: "fa-solid fa-bars"
+	}
+
+	// Loading Content
+	window.addEventListener('load', function () {
+		var loadingScreen = document.getElementById('loading-screen');
+		var content = document.getElementById('container');
+		loadingScreen.style.display = 'none';
+		content.style.display = 'block';
+	});
+</script>
+</html>
