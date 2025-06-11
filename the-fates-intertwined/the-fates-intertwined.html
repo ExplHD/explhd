@@ -4,11 +4,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Fates Intertwined</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="the-fates-intertwined/the-fates-intertwined.css"/>
+    <link rel="stylesheet" href="../the-fates-intertwined/the-fates-intertwined.css"/>
 </head>
 <body>
 	<div class="navbar">
-		<img class="logo" src="images/logo.jpg" alt="logo">
+		<img class="logo" src="../images/logo.jpg" alt="logo">
 		<ul class="links">
 			<li><a href="/explhd/projects.html">Home</a></li>
 			<li><a href="#">About</a></li>
@@ -39,8 +39,8 @@
 		<div class="info-container">
 			<h1>Add-On Information :</h1>
 			<div class="flex-button">
-				<a href="the-fates-intertwined-wiki-weapons.html"><button class="weapon">Weapons</button></a>
-				<a href="the-fates-intertwined-wiki-weapons.html"><button class="weapon">Weapons</button></a>
+				<a href="the_fates-intertwined/wiki/weapons.html"><button class="weapon">Weapons</button></a>
+				<a href="the-fates-intertwined/wiki/boss.html"><button class="weapon">Boss</button></a>
 				<a href="the-fates-intertwined-wiki-weapons.html"><button class="weapon">Weapons</button></a>
 				<a href="the-fates-intertwined-wiki-weapons.html"><button class="weapon">Weapons</button></a>
 				<a href="the-fates-intertwined-wiki-weapons.html"><button class="weapon">Weapons</button></a>
@@ -51,8 +51,21 @@
 		<div class="info-container">
 			<h1>Download :</h1>
 			<div class="flex-button">
-				<button type="menu">2025.2.1, 2025.1.1</button>
-				<a href="the-fates-intertwined-wiki-weapons.html"><button class="weapon">Weapons</button></a>
+				<div class="dropdown">
+  					<button onclick="downloadDropDown()" class="dropbtn">Dropdown</button>
+  					<div id="downloadDropdown" class="dropdown-content">
+  					  <a href="https://www.mediafire.com/folder/1kqiehaw8h8du/The_Fates_Intertwined">2024.4.1 : 1.20 - 1.21</a>
+  					  <a href="https://www.mediafire.com/folder/hz5hlphplmsn7/The_Fates_Intertwined_2024.6.2">2024.6.2 : 1.21.20</a>
+  					  <a href="https://www.mediafire.com/file/ux5jz14azzatfoe/The_Fates_Intertwined_2024.10.4.mcaddon/file">2024.10.4 : 1.21.40</a>
+					  <a href="https://www.mediafire.com/file/k5n3bgdywh2ejgw/The_Fates_Intertwined_2025.1.1_REVISED.mcaddon/file">2025.1.1 : 1.21.50</a>
+					  <a href="https://www.mediafire.com/file/nlp5bqbe7uom0to/The_Fates_Intertwined_2025.2.1.mcaddon/file">2025.2.1 : 1.21.60</a>
+					  <a href="https://www.mediafire.com/file/oacuixfzaucxlw0/The_Fates_Intertwined_2025.2.2.mcaddon/file">2025.2.2 : 1.21.60</a>
+					  <a href="https://www.mediafire.com/file/iyqjhevbvatvf7w/The_Fates_Intertwined_2025.2.3.mcaddon/file">2025.2.3 : 1.21.70 - 1.21.80</a>
+					  <a href="https://www.mediafire.com/file/ir99ci5xng1xgbj/The_Fates_Intertwined_2025.5.1.mcaddon/file">2025.5.1 : 1.21.80</a>
+					  <a href="https://www.mediafire.com/file/7askvbiy3d8lqrc/The_Fates_Intertwined_2025.5.2.mcaddon/file">2025.5.2 : 1.21.80</a>
+					  <a href="https://www.mediafire.com/file/uect1vynlfyx9i9/The_Fates_Intertwined_2025.5.3_%281.21.80%29.mcaddon/file">2025.5.3 : 1.21.80</a>
+  					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -70,5 +83,23 @@
 			? "fa-solid fa-xmark"
 			: "fa-solid fa-bars"
 	}
+
+	function downloadDropDown(){
+		document.getElementById("downloadDropdown").classList.toggle("show");
+	}
+
+	window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
 </script>
 </html>
