@@ -243,13 +243,36 @@ body {
     transform: translate(0%, -30%);
 }
 
+.text-container h1::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation: infinite 2s line cubic-bezier(0.075, 0.82, 0.165, 1)
+}
+
+@keyframes line {
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0%;
+    }
+}
+
 .text-container p {
     font-size: 1.3rem;
 }
 
 .projects {
     margin-top: 5%;
-    width: 20vw;
+    width: 10vw;
     height: 10vh;
     font-size: 2rem;
     font-family: "Montserrat", serif;
@@ -262,10 +285,58 @@ body {
     flex-grow: 1;
 }
 
+.about {
+    margin-top: 5%;
+    margin-left: 2%;
+    width: 10vw;
+    height: 10vh;
+    font-size: 2rem;
+    font-family: "Montserrat", serif;
+    font-weight: 1000;
+    border-radius: 1.5rem;
+    border: 0px;
+    transition: 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+.link-bt {
+    margin-top: 5%;
+    margin-left: 2%;
+    width: 10vw;
+    height: 10vh;
+    font-size: 2rem;
+    font-family: "Montserrat", serif;
+    font-weight: 1000;
+    border-radius: 1.5rem;
+    border: 0px;
+    transition: 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    flex-grow: 1;
+}
+
 .projects:hover {
     transition: 0.3s ease-in-out;
     box-shadow: 0px 0px 8px 8px rgb(251, 255, 0);
+    width: 15vw;
 }
+
+.about:hover {
+    transition: 0.3s ease-in-out;
+    color: white;
+    background: rgba(238, 255, 0, 0.5);
+    width: 15vw;
+}
+
+.link-bt:hover {
+    transition: 0.3s ease-in-out;
+    color: white;
+    background: rgba(238, 255, 0, 0.5);
+    width: 15vw;
+}
+
 
 /* MEDIA QUERIES */
 @media(max-width: 992px) {
@@ -293,7 +364,7 @@ body {
     .hex-wrap {
         max-width: 128px;
         max-height: 128px;
-        transform: translate(%, 0%);
+        transform: translate(100%, 0%);
     }
 
     .text-container{
@@ -313,7 +384,7 @@ body {
     
     .projects {
         margin-top: 5%;
-        width: 60vw;
+        width: 30vw;
         height: 10vh;
         font-size: 2rem;
         font-family: "Montserrat", serif;
@@ -323,6 +394,14 @@ body {
         background: linear-gradient(90deg, rgb(77, 160, 255), rgba(245, 241, 7, 1));
         transition: 0.3s ease-in-out;
         cursor: pointer;
+    }
+
+    .about {
+        display: none;
+    }
+    
+    .link-bt {
+        display: none;
     }
 }
 
@@ -343,12 +422,13 @@ body {
     .logo {
         max-width: 64px;
         max-height: 64px;
-        margin-left: 5%;
+        margin-left: 0%;
     }
 
     .welcome-container {
         margin: 1vh;
-        height: fit-content;
+        width: 400px;
+        height: 650px;
         background-color: rgba(255, 255, 255, 0.4);
         display: flex;
         flex-direction: column;
@@ -365,7 +445,7 @@ body {
 
     .text-container{
         margin-left: 0;
-        width: 75rem;
+        width: 20rem;
         height: 40rem;
     }
     
@@ -375,14 +455,14 @@ body {
     }
     
     .text-container p {
-        font-size: 1rem;
-        width: 18rem;
+        font-size: 0.8rem;
+        width: 12rem;
         text-align: justify;
     }
     
     .projects {
-        margin-top: 5%;
-        width: 60vw;
+        margin-top: 2%;
+        width: 30vw;
         height: 10vh;
         font-size: 2rem;
         font-family: "Montserrat", serif;
@@ -392,5 +472,13 @@ body {
         background: linear-gradient(90deg, rgb(77, 160, 255), rgba(245, 241, 7, 1));
         transition: 0.3s ease-in-out;
         cursor: pointer;
+    }
+
+    .about {
+        display: none;
+    }
+    
+    .link-bt {
+        display: none;
     }
 }

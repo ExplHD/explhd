@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Fates Intertwined</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="the-fates-intertwined/the-fates-intertwined.css"/>
+</head>
+<body>
+	<div class="navbar">
+		<img class="logo" src="images/logo.jpg" alt="logo">
+		<ul class="links">
+			<li><a href="/explhd/projects.html">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Links</a></li>
+		</ul>
+		<div class="toggle-button">
+			<i class="fa-solid fa-bars"></i>
+		</div>
+		<div class="dropdown-menu">
+			<li><a href="/explhd/projects.html">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Links</a></li>
+		</div>
+	</div>
+    <div class="box">
+        <div class="title">
+            <h1>The Fates Intertwined</h1>
+			<p class="type">Add-ons</p>
+			<p class="games">Minecraft : Bedrock Edition</p>
+			<p class="addon-version">2024-10-3</p>
+			<p class="game-version">1.21.40</p>
+        </div>
+		<img class="thumbnail" src="images/thumb-fates-corruption.png" alt="the-fates-intertwined">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/tpsHWHlahWk?si=0RK6myhW5FGNpfB5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="thumbnail"></iframe>
+		<div class="intro">
+			<p><br>Feels the minecraft weapons progression is very boring? Or the boss experience that feels very plains? try this add-on, this add-on adds a lot of weapons progression, some bosses, and even added the custom lore based on the 4 craftable weapons, and defeat all the boss to get more weapons. many of the custom weapons here have their unique attack pattern, and they have the special ability when you interact with this weapon</p><br>
+		</div>
+		<div class="info-container">
+			<h1>Add-On Information :</h1>
+			<div class="flex-button">
+				<a href="the-fates-intertwined-wiki-weapons.html"><button class="weapon">Weapons</button></a>
+				<a href="the-fates-intertwined-wiki-weapons.html"><button class="weapon">Weapons</button></a>
+				<a href="the-fates-intertwined-wiki-weapons.html"><button class="weapon">Weapons</button></a>
+				<a href="the-fates-intertwined-wiki-weapons.html"><button class="weapon">Weapons</button></a>
+				<a href="the-fates-intertwined-wiki-weapons.html"><button class="weapon">Weapons</button></a>
+				<a href="the-fates-intertwined-wiki-weapons.html"><button class="weapon">Weapons</button></a>
+			</div>
+		</div>
+
+		<div class="info-container">
+			<h1>Download :</h1>
+			<div class="flex-button">
+				<button type="menu">2025.2.1, 2025.1.1</button>
+				<a href="the-fates-intertwined-wiki-weapons.html"><button class="weapon">Weapons</button></a>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	const toggleBtn = document.querySelector('.toggle-button')
+	const toggleBtnIcon = document.querySelector('.toggle-button i')
+	const dropDownMenu = document.querySelector('.dropdown-menu')
+
+	toggleBtn.onclick = function () {
+		dropDownMenu.classList.toggle('open')
+		const isOpen = dropDownMenu.classList.contains('open')
+
+		toggleBtnIcon.classList = isOpen
+			? "fa-solid fa-xmark"
+			: "fa-solid fa-bars"
+	}
+</script>
+</html>
