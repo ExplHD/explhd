@@ -71,3 +71,11 @@
 </div>
 
 ---
+
+---
+<h3 align='center'>My Commit Rate</h3>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/explhd/explhd/output/snake.svg" alt="Snake animation" draggable="false" />
+</p>
+
+---
