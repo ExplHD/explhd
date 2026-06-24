@@ -1,5 +1,5 @@
 <picture>
-  <img src="https://github.com/ExplHD/explhd/assets/banner-explhd-no-nameplate.png"/>
+  <img src="./assets/banner-explhd-no-nameplate.png" alt="Banner" draggable="false"/>
 <picture/>
   
 **A beginner Developer, experienced at making Minecraft Add-ons, sometimes experimenting at random things**
