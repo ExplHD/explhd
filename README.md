@@ -1,4 +1,4 @@
-**A beginner Developer, usually making Minecraft Add-ons, sometimes experimenting at random things**
+**A beginner Developer, experienced at making Minecraft Add-ons, sometimes experimenting at random things**
 
 ---
 <h3 align='center'>I'm Currently Learning</h3>
