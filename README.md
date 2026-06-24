@@ -1,3 +1,7 @@
+<picture>
+  <img src="https://github.com/ExplHD/explhd/banner-explhd-no-nameplate.png"/>
+<picture/>
+  
 **A beginner Developer, experienced at making Minecraft Add-ons, sometimes experimenting at random things**
 
 ---
@@ -69,13 +73,5 @@
     <img src='https://skillicons.dev/icons?i=github' />
   </a>
 </div>
-
----
-
----
-<h3 align='center'>My Commit Rate</h3>
-<p align="center">
-  <img src="https://raw.githubusercontent.com/explhd/explhd/output/snake.svg" alt="Snake animation" draggable="false" />
-</p>
 
 ---
