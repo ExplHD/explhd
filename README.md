@@ -4,7 +4,7 @@
 <h3 align='center'>I'm Currently Learning</h3>
 <p align='center'>
   <picture>
-    <img src='https://skillicons.dev/icons?i=java'/>
+    <img src='https://skillicons.dev/icons?i=c,cpp,cs'/>
   </picture>
 </p>
 
@@ -13,7 +13,16 @@
 <h3 align='center'>Languages I'm Currently Used</h3>
 <p align='center'>
   <picture>
-    <img src='https://skillicons.dev/icons?i=js,ts,html,css,github,git'/>
+    <img src='https://skillicons.dev/icons?i=js,ts,java,html,css,github,git'/>
+  </picture>
+</p>
+
+---
+
+<h3 align='center'>Tools that I use</h3>
+<p align='center'>
+  <picture>
+    <img src='https://skillicons.dev/icons?i=vscode,github,git'/>
   </picture>
 </p>
 
