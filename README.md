@@ -8,7 +8,7 @@
 <h3 align='center'>I'm Currently Learning</h3>
 <p align='center'>
   <picture>
-    <img src='https://skillicons.dev/icons?i=c,cpp,cs'/>
+    <img src='https://skillicons.dev/icons?i=rust'/>
   </picture>
 </p>
 
