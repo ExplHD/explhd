@@ -13,6 +13,8 @@ text{font-family:'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace;f
   100%{transform:translateX(0);opacity:0}
 }
 .m0{animation:m0 20.0s infinite}
+@keyframes v0{0%{opacity:0}0.000%{opacity:1}17.300%{opacity:1}17.350%{opacity:0}100%{opacity:0}}
+.v0{animation:v0 20.0s steps(1,end) infinite}
 @keyframes m1{
   0%{transform:translateX(0);opacity:0;animation-timing-function:steps(1,end)}
   20.000%{transform:translateX(0);opacity:1;animation-timing-function:steps(24,end)}
@@ -23,6 +25,8 @@ text{font-family:'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace;f
   100%{transform:translateX(0);opacity:0}
 }
 .m1{animation:m1 20.0s infinite}
+@keyframes v1{0%{opacity:0}20.000%{opacity:1}41.800%{opacity:1}41.850%{opacity:0}100%{opacity:0}}
+.v1{animation:v1 20.0s steps(1,end) infinite}
 @keyframes m2{
   0%{transform:translateX(0);opacity:0;animation-timing-function:steps(1,end)}
   40.000%{transform:translateX(0);opacity:1;animation-timing-function:steps(30,end)}
@@ -33,6 +37,8 @@ text{font-family:'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace;f
   100%{transform:translateX(0);opacity:0}
 }
 .m2{animation:m2 20.0s infinite}
+@keyframes v2{0%{opacity:0}40.000%{opacity:1}64.500%{opacity:1}64.550%{opacity:0}100%{opacity:0}}
+.v2{animation:v2 20.0s steps(1,end) infinite}
 @keyframes m3{
   0%{transform:translateX(0);opacity:0;animation-timing-function:steps(1,end)}
   60.000%{transform:translateX(0);opacity:1;animation-timing-function:steps(23,end)}
@@ -43,6 +49,8 @@ text{font-family:'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace;f
   100%{transform:translateX(0);opacity:0}
 }
 .m3{animation:m3 20.0s infinite}
+@keyframes v3{0%{opacity:0}60.000%{opacity:1}81.350%{opacity:1}81.400%{opacity:0}100%{opacity:0}}
+.v3{animation:v3 20.0s steps(1,end) infinite}
 @keyframes m4{
   0%{transform:translateX(0);opacity:0;animation-timing-function:steps(1,end)}
   80.000%{transform:translateX(0);opacity:1;animation-timing-function:steps(32,end)}
@@ -53,37 +61,39 @@ text{font-family:'JetBrains Mono','Fira Code',Consolas,'Courier New',monospace;f
   100%{transform:translateX(0);opacity:0}
 }
 .m4{animation:m4 20.0s infinite}
+@keyframes v4{0%{opacity:0}80.000%{opacity:1}105.400%{opacity:1}100.000%{opacity:0}100%{opacity:0}}
+.v4{animation:v4 20.0s steps(1,end) infinite}
 </style>
 <rect x="1" y="1" width="798" height="62" rx="12" fill="#000" stroke="#4d4d4d" stroke-width="2"/>
-  <g class="m0" style="opacity:0">
+  <g class="v0" style="opacity:0">
     <text x="299.2" y="40.4" textLength="201.6" lengthAdjust="spacing">Hi, I&#39;m ExplHD</text>
   </g>
   <g class="m0" style="opacity:0">
     <rect x="299.2" y="8" width="221.6" height="48" fill="#000"/>
     <rect class="cur" x="300.2" y="20.0" width="3" height="24.0" fill="#fff"/>
   </g>
-  <g class="m1" style="opacity:0">
+  <g class="v1" style="opacity:0">
     <text x="227.2" y="40.4" textLength="345.6" lengthAdjust="spacing">Minecraft Add-on Creator</text>
   </g>
   <g class="m1" style="opacity:0">
     <rect x="227.2" y="8" width="365.6" height="48" fill="#000"/>
     <rect class="cur" x="228.2" y="20.0" width="3" height="24.0" fill="#fff"/>
   </g>
-  <g class="m2" style="opacity:0">
+  <g class="v2" style="opacity:0">
     <text x="184.0" y="40.4" textLength="432.0" lengthAdjust="spacing">JavaScript / TypeScript / Java</text>
   </g>
   <g class="m2" style="opacity:0">
     <rect x="184.0" y="8" width="452.0" height="48" fill="#000"/>
     <rect class="cur" x="185.0" y="20.0" width="3" height="24.0" fill="#fff"/>
   </g>
-  <g class="m3" style="opacity:0">
+  <g class="v3" style="opacity:0">
     <text x="234.4" y="40.4" textLength="331.2" lengthAdjust="spacing">Currently learning Rust</text>
   </g>
   <g class="m3" style="opacity:0">
     <rect x="234.4" y="8" width="351.2" height="48" fill="#000"/>
     <rect class="cur" x="235.4" y="20.0" width="3" height="24.0" fill="#fff"/>
   </g>
-  <g class="m4" style="opacity:0">
+  <g class="v4" style="opacity:0">
     <text x="169.6" y="40.4" textLength="460.8" lengthAdjust="spacing">Experimenting with random things</text>
   </g>
   <g class="m4" style="opacity:0">
