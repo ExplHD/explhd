@@ -1,77 +1,61 @@
-<picture>
-  <img src="./assets/banner-explhd-no-nameplate.png" alt="Banner" draggable="false"/>
-<picture/>
-  
-**A beginner Developer, experienced at making Minecraft Add-ons, sometimes experimenting at random things**
-
----
-<h3 align='center'>I'm Currently Learning</h3>
-<p align='center'>
-  <picture>
-    <img src='https://skillicons.dev/icons?i=rust'/>
-  </picture>
+<p align="center">
+  <img src="./assets/banner-explhd-no-nameplate.png" alt="ExplHD banner" draggable="false"/>
 </p>
 
----
-
-<h3 align='center'>Languages I'm Currently Used</h3>
-<p align='center'>
-  <picture>
-    <img src='https://skillicons.dev/icons?i=js,ts,java,html,css,github,git'/>
-  </picture>
+<p align="center">
+  <img src="./assets/typing.svg" alt="Hi, I'm ExplHD — Minecraft Add-on Creator" width="100%"/>
 </p>
 
----
-
-<h3 align='center'>Tools that I use</h3>
-<p align='center'>
-  <picture>
-    <img src='https://skillicons.dev/icons?i=vscode,github,git'/>
-  </picture>
+<p align="center">
+  <i>Building Minecraft Add-ons, writing scripts, and breaking random things just to see how they work.</i>
 </p>
 
----
+<p align="center">
+  <img src="./assets/divider.svg" width="100%"/>
+</p>
 
-<div align='center'>
-  <h3>Stats</h3>
+<table align="center">
+  <tr>
+    <td align="center" width="33%">
+      <h3>🧱</h3>
+      <b>Minecraft Add-ons</b><br/>
+      <sub>Custom blocks, items, entities &amp; gameplay systems</sub>
+    </td>
+    <td align="center" width="33%">
+      <h3>⚙️</h3>
+      <b>Scripting</b><br/>
+      <sub>JavaScript &amp; TypeScript logic that brings add-ons to life</sub>
+    </td>
+    <td align="center" width="33%">
+      <h3>🧪</h3>
+      <b>Experiments</b><br/>
+      <sub>Always poking at something new — right now: Rust</sub>
+    </td>
+  </tr>
+</table>
 
-  <p>
-    <picture>
-      <source
-        srcset='https://github-readme-stats.vercel.app/api/top-langs?username=explhd&show_icons=true&locale=en&layout=compact&theme=transparent&hide_border=true'
-        media='(prefers-color-scheme: dark)'
-      />
-      <source
-        srcset='https://github-readme-stats.vercel.app/api/top-langs?username=explhd&show_icons=true'
-        media='(prefers-color-scheme: light), (prefers-color-scheme: no-preference)'
-      />
-      <img src='https://github-readme-stats.vercel.app/api/top-langs?username=explhd&show_icons=true' />
-    </picture>
-  </p>
+<p align="center">
+  <img src="./assets/divider.svg" width="100%"/>
+</p>
 
-  <p>
-    <picture>
-      <source
-        srcset='https://github-readme-stats.vercel.app/api?username=explhd&include_all_commits=true&show_icons=true&locale=en&theme=transparent&hide_border=true'
-        media='(prefers-color-scheme: dark)'
-      />
-      <source
-        srcset='https://github-readme-stats.vercel.app/api?username=explhd&show_icons=true'
-        media='(prefers-color-scheme: light), (prefers-color-scheme: no-preference)'
-      />
-      <img src='https://github-readme-stats.vercel.app/api?username=explhd&show_icons=true' />
-    </picture>
-  </p>
+<h3 align="center">Toolbox</h3>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=js,ts,java,html,css,vscode,git,github&theme=dark" alt="Tech stack"/>
+</p>
+<p align="center">
+  <sub>Currently learning</sub><br/>
+  <img src="https://skillicons.dev/icons?i=rust&theme=dark" alt="Rust" height="40"/>
+</p>
 
----
+<p align="center">
+  <img src="./assets/divider.svg" width="100%"/>
+</p>
 
-<div align='center'>
-  <a href='https://discord.gg/KR3X3rTSfF'>
-    <img src='https://skillicons.dev/icons?i=discord' />
+<p align="center">
+  <a href="https://discord.gg/KR3X3rTSfF">
+    <img src="https://img.shields.io/badge/Discord-Join%20the%20server-000000?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"/>
   </a>
-  <a href='https://github.com/explhd'>
-    <img src='https://skillicons.dev/icons?i=github' />
+  <a href="https://github.com/explhd">
+    <img src="https://img.shields.io/badge/GitHub-ExplHD-000000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
   </a>
-</div>
-
----
+</p>
