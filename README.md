@@ -2,9 +2,7 @@
   <img src="./assets/banner-explhd-no-nameplate.png" alt="ExplHD banner" draggable="false"/>
 </p>
 
-<p align="center">
-  <img src="./assets/typing.svg" alt="Hi, I'm ExplHD — Minecraft Add-on Creator" width="100%"/>
-</p>
+<h2 align="center">Hi, I'm ExplHD</h2>
 
 <p align="center">
   <i>Building Minecraft Add-ons, writing scripts, and breaking random things just to see how they work.</i>
@@ -33,6 +31,16 @@
     </td>
   </tr>
 </table>
+
+<p align="center">
+  <img src="./assets/divider.svg" width="100%"/>
+</p>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ExplHD/explhd/output/snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ExplHD/explhd/output/snake-light.svg"/>
+  <img alt="Snake eating my contribution graph" src="https://raw.githubusercontent.com/ExplHD/explhd/output/snake-dark.svg" width="100%"/>
+</picture>
 
 <p align="center">
   <img src="./assets/divider.svg" width="100%"/>
