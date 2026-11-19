@@ -1,22 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="24" viewBox="0 0 800 24">
-<style>
-@keyframes run{0%{transform:translateX(-160px)}100%{transform:translateX(800px)}}
-@keyframes spin{to{transform:rotate(360deg)}}
-.run{animation:run 4s linear infinite}
-.spin{transform-box:fill-box;transform-origin:center;animation:spin 6s linear infinite}
-</style>
-<defs>
-  <linearGradient id="g" x1="0" x2="1">
-    <stop offset="0" stop-color="#a6a6a6" stop-opacity="0"/>
-    <stop offset=".5" stop-color="#a6a6a6"/>
-    <stop offset="1" stop-color="#a6a6a6" stop-opacity="0"/>
-  </linearGradient>
-</defs>
 <rect x="0" y="11" width="370" height="2" rx="1" fill="#808080" opacity=".5"/>
 <rect x="430" y="11" width="370" height="2" rx="1" fill="#808080" opacity=".5"/>
-<rect class="run" x="0" y="10" width="160" height="4" rx="2" fill="url(#g)"/>
-<g class="spin">
-  <rect x="390" y="2" width="20" height="20" fill="none" stroke="#808080" stroke-width="2" transform="rotate(45 400 12)"/>
-</g>
+<rect x="390" y="2" width="20" height="20" fill="none" stroke="#808080" stroke-width="2" transform="rotate(45 400 12)"/>
 <path d="M400 7v10M395 12h10" stroke="#808080" stroke-width="2" stroke-linecap="round"/>
 </svg>

@@ -27,7 +27,7 @@
     <td align="center" width="33%">
       <h3>🧪</h3>
       <b>Experiments</b><br/>
-      <sub>Always poking at something new — right now: Rust</sub>
+      <sub>Always experimenting at something unexpected or new.</sub>
     </td>
   </tr>
 </table>
